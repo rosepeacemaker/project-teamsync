@@ -1,2 +1,54 @@
 
 @import "tailwindcss";
+
+@import "tailwindcss";
+
+@keyframes blob-one {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(120px, 80px) scale(1.15);
+  }
+}
+
+@keyframes blob-two {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-100px, 120px) scale(1.2);
+  }
+}
+
+@keyframes blob-three {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(80px, -100px) scale(1.1);
+  }
+}
+
+.animate-blob-one {
+  animation: blob-one 14s ease-in-out infinite;
+}
+
+.animate-blob-two {
+  animation: blob-two 18s ease-in-out infinite;
+}
+
+.animate-blob-three {
+  animation: blob-three 16s ease-in-out infinite;
+}
+
+body {
+  margin: 0;
+  background: #080808;
+}
