@@ -18,9 +18,9 @@ import { useAuth } from "../../hooks/useAuth";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const navigate = useNavigate();
+  
 
-let {register, handleSubmit, errors ,onRegisterSubmit} = useAuth();
+let {register, handleSubmit, errors ,onRegisterSubmit,navigate} = useAuth();
   return (
     <AuthLAyout>
       <div
@@ -182,10 +182,10 @@ let {register, handleSubmit, errors ,onRegisterSubmit} = useAuth();
         <p className="mt-7 text-center text-sm text-white/50">
           Already have an account?{" "}
           <button
-          onClick={()=>navigate("/home")}
+          onClick={()=>navigate("/")}
             className="font-medium text-[#B8D42B] hover:underline"
           >
-            Sign in
+            Log in
           </button>
         </p>
       </div>

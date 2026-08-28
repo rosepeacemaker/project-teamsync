@@ -48,6 +48,7 @@ const AnimationBackground = () => {
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/40" />
+      
     </div>
   );
 };

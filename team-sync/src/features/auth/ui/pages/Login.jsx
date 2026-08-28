@@ -172,10 +172,10 @@ const Login = () => {
         <p className="mt-8 text-center text-sm text-white/50">
           Don't have an account?{" "}
           <button
-            onClick={()=>navigate("/home")}
+            onClick={()=>navigate("/register")}
             className="font-medium text-[#B8D42B] transition hover:underline"
           >
-            Create account
+            Sign up
           </button>
         </p>
       </div>
