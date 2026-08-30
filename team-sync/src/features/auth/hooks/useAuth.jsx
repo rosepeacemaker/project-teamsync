@@ -5,6 +5,7 @@ import { loginEmployee } from "../state/auth/authAction";
 
 export let useAuth = () =>{
 
+  
   let dispatch= useDispatch()
 
   let navigate = useNavigate();
@@ -24,6 +25,8 @@ export let useAuth = () =>{
   const onRegisterSubmit = (data) => {
     console.log("Register Data:", data);
   };
+
+
   return {
     register,
     handleSubmit,
