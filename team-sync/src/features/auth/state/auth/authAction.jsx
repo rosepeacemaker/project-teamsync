@@ -9,9 +9,23 @@ export let loginEmployee = createAsyncThunk(
         try{
             let res = await axiosInstance.post("/auth/login", credentials);
             console.log(res);
-            return res.data;
+            return res.data.data;
         } catch(error) {
             return thunkApi.rejectWithValue(error)
         }
 
-})
+}
+);
+
+export let currentLoggedEmployee = createAsyncThunk(
+    "auth/me",
+    async (_, thunkApi )=>{
+     try{
+            let res = await axiosInstance.get("/auth/me");
+            console.log(res);
+            return res.data.user;
+        } catch(error) {
+            return thunkApi.rejectWithValue(error)
+        }
+}
+);

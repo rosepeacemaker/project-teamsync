@@ -9,9 +9,9 @@ import {
   EyeOff,
 } from "lucide-react";
 
-import AuthInput from "../../../../../src/components/auth/AuthInput";
-import AuthButton from "../../../../../src/components/auth/AuthButton";
-import AuthLAyout from "../../../../../src/components/auth/AuthLayout";
+import AuthInput from "../../../../components/authSharedcompo/AuthInput";
+import AuthButton from "../../../../components/authSharedcompo/AuthButton";
+import AuthLAyout from "../../../../components/authSharedcompo/AuthLayout";
 import { useAuth } from "../../hooks/useAuth";
 
 

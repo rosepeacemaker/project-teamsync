@@ -1,4 +1,4 @@
-import AnimationBackground from "../auth/AnimationBackground"
+import AnimationBackground from "./AnimationBackground"
 
 const AuthLayout = ({ children }) => {
   return (
