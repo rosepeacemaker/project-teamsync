@@ -20,8 +20,8 @@ const AuthInput = ({
           rounded-xl
           border
           bg-black/40
-          px-4
-          py-3
+          px-3
+          py-2
           transition-all
           duration-300
           ${
@@ -33,7 +33,7 @@ const AuthInput = ({
       >
         {Icon && (
           <Icon
-            size={19}
+            size={17}
             className="text-[#B8D42B]"
           />
         )}

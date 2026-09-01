@@ -1,7 +1,13 @@
 
 @import "tailwindcss";
 
-@import "tailwindcss";
+/* root variables */
+:root{
+  --color-primary: #00ffb3;
+  --color-secondary: #00ffb3;
+  --color-accent: #00ffb3;
+  --color-background: #080808;
+}
 
 @keyframes blob-one {
   0%,
@@ -51,4 +57,5 @@
 body {
   margin: 0;
   background: #080808;
+  overflow: hidden;
 }

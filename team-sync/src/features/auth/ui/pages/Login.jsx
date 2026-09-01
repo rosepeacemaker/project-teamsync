@@ -29,10 +29,10 @@ const Login = () => {
           border
           border-white/10
           bg-[#111111]/80
-          p-6
+          p-2
           shadow-2xl
           backdrop-blur-xl
-          sm:p-10
+          sm:p-8
         "
       >
         {/* Heading */}
@@ -43,8 +43,8 @@ const Login = () => {
               mx-auto
               mb-5
               flex
-              h-14
-              w-14
+              h-12
+              w-12
               items-center
               justify-center
               rounded-2xl
@@ -56,7 +56,7 @@ const Login = () => {
             <Lock className="text-[#B8D42B]" />
           </div>
 
-          <h1 className="text-3xl font-semibold tracking-tight text-white">
+          <h1 className="text-2xl font-semibold tracking-tight text-white">
             Welcome back
           </h1>
 
@@ -69,7 +69,7 @@ const Login = () => {
 
         <form
           onSubmit={handleSubmit(onLoginSubmit)}
-          className="space-y-6"
+          className="space-y-4"
         >
           <AuthInput
             label="Email address"
@@ -97,8 +97,8 @@ const Login = () => {
                 rounded-xl
                 border
                 bg-black/40
-                px-4
-                py-3
+                px-3
+                py-2
                 transition-all
                 duration-300
                 ${
@@ -109,7 +109,7 @@ const Login = () => {
               `}
             >
               <Lock
-                size={19}
+                size={17}
                 className="text-[#B8D42B]"
               />
 
@@ -170,7 +170,7 @@ const Login = () => {
         {/* Register Link */}
 
         <p className="mt-8 text-center text-sm text-white/50">
-          Don't have an account?{" "}
+          Don't have an account?
           <button
             onClick={()=>navigate("/register")}
             className="font-medium text-[#B8D42B] transition hover:underline"
