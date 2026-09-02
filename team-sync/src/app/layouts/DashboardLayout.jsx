@@ -17,9 +17,16 @@ if(mode === "light"){
 
 
   return (
-    <div>
-        <h1>This is For navbar</h1>
-        <Outlet />
+    <div className='text-white h-screen grid grid-cols-[1fr_7fr]'>
+        <h1 className='bg-blue-950'>This is For navbar</h1>
+        <div>
+          <div>
+            <h1>
+              this is top nav
+            </h1>
+          <Outlet />
+          </div>
+        </div>
     </div>
   )
 }

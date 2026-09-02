@@ -30,19 +30,19 @@ let {register, handleSubmit, errors ,onRegisterSubmit,navigate} = useAuth();
           p-6
           shadow-2xl
           backdrop-blur-xl
-          sm:p-10
+          sm:p-3
         "
       >
         {/* Heading */}
 
-        <div className="mb-8 text-center">
+        <div className="mb-4 text-center">
           <div
             className="
               mx-auto
-              mb-5
+              mb-3
               flex
-              h-14
-              w-14
+              h-10
+              w-10
               items-center
               justify-center
               rounded-2xl
@@ -54,18 +54,18 @@ let {register, handleSubmit, errors ,onRegisterSubmit,navigate} = useAuth();
             <User className="text-[#B8D42B]" />
           </div>
 
-          <h1 className="text-3xl font-semibold text-white">
+          <h1 className="text-xl font-semibold text-white">
             Create account
           </h1>
 
-          <p className="mt-3 text-sm text-white/50">
+          <p className="mt-2 text-sm text-white/50">
             Join us and get started today.
           </p>
         </div>
 
         <form
           onSubmit={handleSubmit(onRegisterSubmit)}
-          className="space-y-5"
+          className="space-y-4"
         >
           {/* Name */}
 
@@ -108,8 +108,8 @@ let {register, handleSubmit, errors ,onRegisterSubmit,navigate} = useAuth();
                 rounded-xl
                 border
                 bg-black/40
-                px-4
-                py-3
+                px-3
+                py-2
                 transition-all
                 ${
                   errors.password
