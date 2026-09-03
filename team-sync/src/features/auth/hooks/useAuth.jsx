@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux"
-import { loginEmployee } from "../state/auth/authAction";
+import { loginEmployee ,currentLoggedEmployee} from "../state/auth/authAction";
 
 export let useAuth = () =>{
 
@@ -24,6 +24,7 @@ export let useAuth = () =>{
   };
   const onRegisterSubmit = (data) => {
     console.log("Register Data:", data);
+    dispatch(currentLoggedEmployee(data))
   };
 
 
