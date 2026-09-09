@@ -11,12 +11,12 @@ const AuthButton = ({
         w-full
         overflow-hidden
         rounded-xl
-        bg-[#B8D42B]
+        bg-[#242560]
         px-4
         py-2
-        
+        text-sm
         font-semibold
-        text-black
+        text-white
         transition-all
         duration-300
         hover:scale-[1.02]

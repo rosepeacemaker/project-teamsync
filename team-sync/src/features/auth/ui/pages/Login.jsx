@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-
 import {
   Mail,
   Lock,
@@ -173,7 +171,7 @@ const Login = () => {
           Don't have an account?
           <button
             onClick={()=>navigate("/register")}
-            className="font-medium text-[#B8D42B] transition hover:underline"
+            className="font-medium text-[#242560] transition hover:underline"
           >
             Sign up
           </button>
