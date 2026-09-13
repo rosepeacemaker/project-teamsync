@@ -1,6 +1,7 @@
 
-import LetterGlitch from "../../../../components/authSharedcompo/LetterGlitch";
+import LetterGlitch from "../../../../components/sharedcomponents/LetterGlitch";
 import { useNavigate } from "react-router";
+
 
 const Welcome = () => {
 

@@ -10,7 +10,7 @@ import { currentLoggedEmployee } from "../../features/auth/state/auth/authAction
 import { useDispatch } from "react-redux";
 import PublicRoute from "../protectedRoutes/PublicRoute";
 import ProtectedRoute from "../protectedRoutes/ProtectedRoute";
-import AuthLayout from "../../components/authSharedcompo/AuthLayout";
+import AuthLayout from "../../components/sharedcomponents/AuthLayout";
 
 const AppRoutes = () =>{
     let dispatch = useDispatch();
